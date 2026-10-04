@@ -96,7 +96,16 @@ def generate_description(place, answer_type, language):
         contents=prompt
     )
     return response.text
-    
+
+
+@app.route("/", methods=["GET"])
+def home():
+    return {
+        "status": "online",
+        "message": "Travel Guide API is running!"
+    }
+
+
 @app.route("/generate-audio-guide", methods=["POST"])
 def generate_audio_guide():
     data = request.json

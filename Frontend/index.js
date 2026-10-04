@@ -58,7 +58,7 @@ const transcriptArrow = document.getElementById('transcriptArrow');
 // --- Backend API URL ---
 
 const GENERATE_AUDIO_GUIDE_API_URL =
-  'http://127.0.0.1:5000/generate-audio-guide';
+  'https://aitouristguide.onrender.com/generate-audio-guide';
 
 // ============================================================
 // FUNCTIONS
